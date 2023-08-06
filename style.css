@@ -1,0 +1,49 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vm;
+}
+
+.calculator {
+  height: 500px;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  border: solid 2px black;
+}
+.screen {
+  height: 20%;
+  padding: 20px;
+  border: solid 1px black;
+  font-size: 38px;
+}
+.buttons{
+  padding: 20px;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  flex: 1;
+  gap: 20px;
+}
+button{
+  border: solid 1px #000000; 
+  border-radius: 50%;
+  transition: all 0.5s;
+}
+.nums {
+  
+  background: rgb(167, 166, 166);
+  color: aliceblue;
+  transition: all 0.1s;
+}
+.nums:hover{
+  background: orange;
+  color: black;
+}
+.operator:hover {
+  background: green;
+}
+button:hover {
+  transform: scale(1.15);
+}
+
